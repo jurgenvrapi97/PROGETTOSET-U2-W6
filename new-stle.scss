@@ -1,0 +1,23 @@
+@import 'scss/functions';
+@import 'scss/variables';
+
+$new-theme-colors: (
+ 
+  'gray': rgb(128, 128, 128),
+  'full-black': black,
+  
+);
+
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+
+$new-position-values: (
+  0: 0,
+  10:15%,
+  50: 50%,
+  100: 100%
+);
+
+$position-values: map-merge($position-values, $new-position-values);
+
+
+@import 'scss/bootstrap.scss';

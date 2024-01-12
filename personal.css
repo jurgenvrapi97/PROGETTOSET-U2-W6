@@ -1,0 +1,11 @@
+.userbg {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+    to bottom,
+    #000000,
+    #111111,
+    #1b1b1b,
+    #252525,
+    #303030
+  );
+}

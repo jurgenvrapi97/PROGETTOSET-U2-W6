@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix copy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./new-stle.css" />
+  </head>
+  <body class="bg-full-black">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid ms-3 me-3">
+          <img
+            src="./Netflix-assets/assets/netflix_logo.png"
+            alt="Logo"
+            width="80"
+            height="40"
+            class="d-inline-block align-text-top"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">TV Shows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Recently added</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">My List</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#"
+                    ><i class="bi bi-search"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">KIDS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#"
+                    ><i class="bi bi-bell-fill"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <img
+                    src="./Netflix-assets/assets/kids_icon.png"
+                    alt="Logo"
+                    width="40"
+                    height="40"
+                    class="d-inline-block align-text-top"
+                  />
+                </li>
+                <div class="btn-group dropstart">
+                  <button
+                    type="button"
+                    class="btn btn-full-black dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    data-bs-display="static"
+                    aria-expanded="false"
+                  ></button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="user.html">User</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Log out</a></li>
+                  </ul>
+                </div>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- sezione dei generi -->
+      <section>
+        <nav
+          class="navbar bg-full-black border-bottom border-body"
+          data-bs-theme="dark"
+        >
+          <div class="container-fluid ms-3 me-5">
+            <div class="d-flex align-items-center">
+              <h1 class="text-light fs-1">TV shows</h1>
+              <div class="dropdown">
+                <button
+                  class="btn btn-outline-light dropdown-toggle ms-3 rounded-0"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Genrs
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Animation</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Documentary</a>
+                  </li>
+
+                  <li><a class="dropdown-item" href="#">Horror</a></li>
+                </ul>
+              </div>
+            </div>
+            <form class="d-flex d-none d-lg-block" role="search">
+              <button type="button" class="btn btn-outline-light rounded-0">
+                <i class="bi bi-view-list"></i>
+              </button>
+              <button type="button" class="btn btn-outline-light rounded-0">
+                <i class="bi bi-view-stacked"></i>
+              </button>
+            </form>
+          </div>
+        </nav>
+      </section>
+      <!-- prima riga di film -->
+      <section>
+        <div class="container-fluid bg-full-black">
+          <div class="row mb-2 ms-2 pt-3">
+            <h1 class="text-light fs-2">Treading now</h1>
+          </div>
+
+          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 me-3 ms-2">
+            <div class="col">
+              <div class="card border-0 rounded-0 p-0 mb-4 position-relative">
+                <img
+                  src="./Netflix-assets/assets/media/media0.webp"
+                  class="img-fluid"
+                  alt="..."
+                />
+                <span
+                  class="position-absolute start-10 bottom-0 translate-middle text-light bg-danger"
+                  >NEW EPISODE
+                  <span class="visually-hidden">unread messages</span></span
+                >
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0 rounded-0 p-0">
+                <img
+                  src="./Netflix-assets/assets/media/media1.jpg"
+                  class="img-fluid"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0 rounded-0 p-0 mb-4">
+                <img
+                  src="./Netflix-assets/assets/media/media2.webp"
+                  class="img-fluid"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0 rounded-0 p-0">
+                <img
+                  src="./Netflix-assets/assets/media/media3.webp"
+                  class="img-fluid"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0 rounded-0 p-0">
+                <img
+                  src="./Netflix-assets/assets/media/media4.jpg"
+                  class="img-fluid"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0 rounded-0 p-0 position-relative">
+                <img
+                  src="./Netflix-assets/assets/media/media5.webp"
+                  class="img-fluid"
+                  alt="..."
+                />
+                <span
+                  class="position-absolute start-10 bottom-0 translate-middle text-light bg-danger"
+                  >NEW EPISODE
+                  <span class="visually-hidden">unread messages</span></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- seconda riga di film -->
+      <section>
+        <div class="container-fluid bg-full-black pt-3">
+          <div class="row mb-2 ms-2">
+            <h1 class="text-light fs-2">Watch it Again</h1>
+          </div>
+
+          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 me-3 ms-2">
+            <div class="col">
+              <div class="card border-0 rounded-0 p-0 mb-4">
+                <img
+                  src="./Netflix-assets/assets/media/media6.jpg"
+                  class="img-fluid"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0 rounded-0 p-0 position-relative">
+                <img
+                  src="./Netflix-assets/assets/media/media7.webp"
+                  class="img-fluid"
+                  alt="..."
+                />
+                <span
+                  class="position-absolute start-10 bottom-0 translate-middle text-light bg-danger"
+                  >NEW EPISODE
+                  <span class="visually-hidden">unread messages</span></span
+                >
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0 rounded-0 p-0 mb-4">
+                <img
+                  src="./Netflix-assets/assets/media/media8.webp"
+                  class="img-fluid"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0 rounded-0 p-0 position-relative">
+                <img
+                  src="./Netflix-assets/assets/media/media9.jpg"
+                  class="img-fluid"
+                  alt="..."
+                />
+                <span
+                  class="position-absolute start-10 bottom-0 translate-middle text-light bg-danger"
+                  >NEW EPISODE
+                  <span class="visually-hidden">unread messages</span></span
+                >
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0 rounded-0 p-0">
+                <img
+                  src="./Netflix-assets/assets/media/media10.jpg"
+                  class="img-fluid"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0 rounded-0 p-0">
+                <img
+                  src="./Netflix-assets/assets/media/media11.jpg"
+                  class="img-fluid"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- terza riga di film -->
+      <section>
+        <div class="container-fluid bg-full-black pt-3">
+          <div class="row mb-2 ms-2">
+            <h1 class="text-light fs-2">New Releases</h1>
+          </div>
+
+          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 me-3 ms-2">
+            <div class="col">
+              <div class="card border-0 rounded-0 p-0 mb-4">
+                <img
+                  src="./Netflix-assets/assets/media/media12.jpg"
+                  class="img-fluid"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0 rounded-0 p-0 position-relative">
+                <img
+                  src="./Netflix-assets/assets/media/media13.jpg"
+                  class="img-fluid"
+                  alt="..."
+                />
+                <span
+                  class="position-absolute start-10 bottom-0 translate-middle text-light bg-danger"
+                  >NEW EPISODE
+                  <span class="visually-hidden">unread messages</span></span
+                >
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0 rounded-0 p-0 mb-4">
+                <img
+                  src="./Netflix-assets/assets/media/media14.webp"
+                  class="img-fluid"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0 rounded-0 p-0 position-relative">
+                <img
+                  src="./Netflix-assets/assets/media/media15.jpg"
+                  class="img-fluid"
+                  alt="..."
+                />
+                <span
+                  class="position-absolute start-10 bottom-0 translate-middle text-light bg-danger"
+                  >NEW EPISODE
+                  <span class="visually-hidden">unread messages</span></span
+                >
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0 rounded-0 p-0">
+                <img
+                  src="./Netflix-assets/assets/media/media16.webp"
+                  class="img-fluid"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0 rounded-0 p-0">
+                <img
+                  src="./Netflix-assets/assets/media/media17.jpg"
+                  class="img-fluid"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container-fuluid bg-full-black">
+          <!-- icone del footer -->
+          <div class="row justify-content-around pt-5">
+            <div class="col-8 ps-0">
+              <ul class="d-flex list-group list-group-horizontal">
+                <li class="list-group-item bg-full-black border border-black">
+                  <i class="bi bi-facebook text-secondary"></i>
+                </li>
+                <li class="list-group-item bg-full-black border border-black">
+                  <i class="bi bi-instagram text-secondary"></i>
+                </li>
+                <li class="list-group-item bg-full-black border border-black">
+                  <i class="bi bi-twitter text-secondary"></i>
+                </li>
+                <li class="list-group-item bg-full-black border border-black">
+                  <i class="bi bi-youtube text-secondary"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <!-- prima collona del footer -->
+            <div class="col-2">
+              <ul class="d-flex list-group list-group">
+                <li
+                  class="list-group-item bg-full-black border border-black p-0"
+                >
+                  <p>Audio and Subtitlcs</p>
+                </li>
+                <li
+                  class="list-group-item bg-full-black border border-black p-0"
+                >
+                  <p>Media Center</p>
+                </li>
+                <li
+                  class="list-group-item bg-full-black border border-black p-0"
+                >
+                  <p>privacy</p>
+                </li>
+                <li
+                  class="list-group-item bg-full-black border border-black p-0"
+                >
+                  <p>Contact Us</p>
+                </li>
+              </ul>
+            </div>
+            <!-- seconda collonna del footer -->
+            <div class="col-2">
+              <ul class="d-flex list-group list-group">
+                <li
+                  class="list-group-item bg-full-black border border-black p-0"
+                >
+                  <p>Audio Descriptlon</p>
+                </li>
+                <li
+                  class="list-group-item bg-full-black border border-black p-0"
+                >
+                  <p>Investor Relations</p>
+                </li>
+                <li
+                  class="list-group-item bg-full-black border border-black p-0"
+                >
+                  <p>Legal Notices</p>
+                </li>
+              </ul>
+            </div>
+            <!-- terza collonna del footer -->
+            <div class="col-2">
+              <ul class="d-flex list-group list-group">
+                <li
+                  class="list-group-item bg-full-black border border-black p-0"
+                >
+                  <p>Help Center</p>
+                </li>
+                <li
+                  class="list-group-item bg-full-black border border-black p-0"
+                >
+                  <p>Jobs</p>
+                </li>
+                <li
+                  class="list-group-item bg-full-black border border-black p-0"
+                >
+                  <p>Cookie Prelerences</p>
+                </li>
+              </ul>
+            </div>
+            <!-- quarta collonna del footer-->
+            <div class="col-2">
+              <ul class="d-flex list-group list-group">
+                <li
+                  class="list-group-item bg-full-black border border-black p-0"
+                >
+                  <p>Gift Cards</p>
+                </li>
+                <li
+                  class="list-group-item bg-full-black border border-black p-0"
+                >
+                  <p>Terms of use</p>
+                </li>
+                <li
+                  class="list-group-item bg-full-black border border-black p-0"
+                >
+                  <p>Corporate Information</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- bottone contattaci -->
+          <div class="row justify-content-around">
+            <div class="col-8 ps-2">
+              <button type="button" class="btn btn-outline-secondary">
+                Contact Us
+              </button>
+            </div>
+          </div>
+          <!-- copyright -->
+          <div class="row justify-content-around mt-1">
+            <div class="col-8 ps-2">
+              <span class="text-gray">
+                &copy; 1997-2019 Netflix. Inc. (i.OdOOtcda2fdt9cOde)
+              </span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
